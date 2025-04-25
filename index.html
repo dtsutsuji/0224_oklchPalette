@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OKLCH Color Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="handle">
+        <label>パレットの分割数</label>
+        <input type="range" id="paletRange" value="8" min="2" max="16" step="1">
+        <b id="paletRangeNum">8</b>
+    </section>
+    <section id="handle">
+        <label>色相のオフセット</label>
+        <input type="range" id="offsetRange" value="0" min="0" max="360">
+        <b id="offsetRangeNum">0</b>
+    </section>
+    <section id="handle">
+        <label>彩度を変更する</label>
+        <input type="range" id="chromaRange" value="60" min="10" max="100" step="10">
+        <b id="chromaRangeNum">60</b>
+    </section>
+
+    <canvas id="canvas" height="300px"></canvas>
+    <section id="result"></section>
+
+    <script src="main.js"></script>
+</body>
+</html>
